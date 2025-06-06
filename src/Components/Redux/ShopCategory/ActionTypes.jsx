@@ -1,0 +1,1 @@
+export const SET_SHOP_CATEGORY = "SET_SHOP_CATEGORY";

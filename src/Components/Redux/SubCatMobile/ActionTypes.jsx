@@ -1,0 +1,1 @@
+export const SET_SUBCATMOBILE = "SET_SUBCATMOBILE";

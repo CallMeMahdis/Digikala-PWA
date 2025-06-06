@@ -1,0 +1,1 @@
+export const SET_SPECIAL_OFFERS = "SET_SPECIAL_OFFERS";

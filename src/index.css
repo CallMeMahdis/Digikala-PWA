@@ -1,0 +1,207 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@font-face {
+  font-family: Iran-Yekan-Bold;
+  src: url(/src/fonts/fa/iranyekanwebbold.cfb6e26c.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: Iran-Yekan-Regular;
+  src: url(/src/fonts/fa/iranyekanwebregular.e31c09af.woff2) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: Iran-Yekan-Medium;
+  src: url(/src/fonts/fa/iranyekanwebmedium.2d4f96e5.woff) format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: Iran-Yekan-ExtraBold;
+  src: url(/src/fonts/fa/iranyekanwebextrabold.9346e9a2.woff) format("woff2");
+  font-display: swap;
+}
+@theme {
+  --color-orange1: #f57f17;
+  --font-Regular: Iran-Yekan-Regular;
+  --font-Medium: Iran-Yekan-Medium;
+  --font-Bold: Iran-Yekan-Bold;
+  --font-ExtraBold: Iran-Yekan-ExtraBold;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  direction: rtl;
+  width: 100%;
+  height: 100%;
+  font-family: Iran-Yekan-Regular;
+}
+.divider {
+  width: 1.5px;
+  height: 26px;
+}
+.container-4xl-w {
+  width: 100%;
+  max-width: 1676px;
+}
+.shadow-3-bottom {
+  --tw-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.3);
+  --tw-shadow-colored: 0 1px 1px var(--tw-shadow-color),
+    0 4px 8px var(--tw-shadow-color);
+}
+.z-4 {
+  z-index: 4;
+}
+.text-body-2 {
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 2.17;
+}
+.bg-orange1 {
+  background-color: rgb(245, 127, 23, 0.1);
+}
+.nav {
+  transition: transform 0.3s;
+  min-height: 36px;
+  max-height: 40px;
+}
+.shadow-1-bottom {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.14), 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+.shadow-3-bottom {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.nav-border {
+  border-right: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+}
+.ltr {
+  direction: ltr;
+}
+.rtl {
+  direction: rtl;
+}
+.shadow-modal {
+  --tw-shadow: 0 1px 1px rgba(0, 0, 0, 0.14), 0 4px 4px rgba(0, 0, 0, 0.1);
+  --tw-shadow-colored: 0 1px 1px var(--tw-shadow-color),
+    0 4px 4px var(--tw-shadow-color);
+}
+.z-index-2 {
+  z-index: 2;
+}
+.z-index-1 {
+  z-index: 1;
+}
+.z-index-3 {
+  z-index: 3;
+}
+.z-index-5 {
+  z-index: 5;
+}
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.underline-hover {
+  position: relative;
+  padding-bottom: 2px;
+}
+.underline-hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  height: 2px;
+  background-color: #ed1944;
+  transition: width 0.3s ease-in-out;
+}
+.underline-hover:hover::after {
+  width: 100%;
+}
+/* Swiper active dot style */
+.swiper-pagination-bullet {
+  background: black !important;
+  opacity: 0.5 !important;
+  width: 4px !important;
+  height: 4px !important;
+  border-radius: 9999px !important;
+  transition: all 0.2s !important;
+}
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+  width: 16px !important;
+  height: 6px !important;
+  opacity: 1 !important;
+  border-radius: 9999px !important;
+}
+.swiper-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+}
+.footer-h {
+  color: #81858b;
+  font-size: 16px;
+  line-height: 2.1;
+  font-family: Iran-Yekan-Bold;
+}
+.footer-bg::before {
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, #fff);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.scrollbar-none {
+  scrollbar-width: none; /* For Firefox */
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, Edge */
+}
+.style-inherint {
+  display: inherit;
+  color: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}
+/* Media */
+@media (max-width: 420px) {
+  .header-mobile {
+    padding-left: 1px !important;
+    padding-right: 1px !important;
+  }
+  .bell {
+    padding: 4px !important;
+  }
+  .search-mobile {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .footer-btn {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .footer-h {
+    font-size: 14px;
+  }
+  .footer-about p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .footer-btn {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .footer-h {
+    font-size: 14px;
+  }
+  .footer-about p {
+    font-size: 10px;
+  }
+}

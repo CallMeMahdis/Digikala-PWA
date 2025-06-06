@@ -1,0 +1,1 @@
+export const SET_POPULAR_BRANDS = "SET_POPULAR_BRANDS";
