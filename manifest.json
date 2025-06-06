@@ -22,7 +22,7 @@
   "screenshots": [
     {
       "src": "/screenshots/desktop.png",
-      "sizes": "1986x1210",
+      "sizes": "1280x720",
       "type": "image/png",
       "form_factor": "wide"
     },
