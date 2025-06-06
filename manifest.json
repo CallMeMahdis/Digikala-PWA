@@ -21,13 +21,13 @@
   "id": "/",
   "screenshots": [
     {
-      "src": "screenshots/desktop.png",
+      "src": "/screenshots/desktop.png",
       "sizes": "1986x1210",
       "type": "image/png",
       "form_factor": "wide"
     },
     {
-      "src": "screenshots/mobile.png",
+      "src": "/screenshots/mobile.png",
       "sizes": "540x720",
       "type": "image/png",
       "form_factor": "narrow"
